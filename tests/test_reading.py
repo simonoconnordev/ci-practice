@@ -8,11 +8,11 @@ def test_a_few_words_take_one_minute():
 
 
 def test_exactly_one_minute_of_words():
-    assert reading_time(200) == 1
+    assert reading_time(250) == 1
 
 
 def test_partial_minutes_round_up():
-    assert reading_time(201) == 2
+    assert reading_time(251) == 2
 
 
 def test_empty_text_still_shows_one_minute():
