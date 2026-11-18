@@ -1,0 +1,8 @@
+How this page reached you
+Nobody copied this page onto a web server by hand. It started as a text file in a GitHub repository, and a pipeline did the rest.
+
+Every change to the repository begins on a branch of its own. When the change is ready, a pull request asks for it to be merged into main, the branch the live site is built from. Opening the pull request starts the first automated check: a fresh virtual machine downloads the code, installs its tools, checks the Python for mistakes and runs the tests. If any of that fails, the pull request shows a red cross and main refuses the merge.
+
+When the checks pass, the change can be merged. That merge is a push to main, and the push starts the second half of the pipeline. One job turns this text file into a web page and packages it. Another job waits in an environment called github-pages until its owner approves the deployment. Only then is the page published.
+
+The reading time at the top of the page is calculated by a small Python function. The tests decide how it rounds, which is why changing the reading speed means changing the tests too. A pipeline can't tell whether a change is wise. What it can do is make sure that every change has been tested, reviewed and approved before anyone sees it.

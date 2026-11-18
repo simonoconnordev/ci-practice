@@ -1,0 +1,16 @@
+[project]
+name = "ci-practice"
+version = "0.1.0"
+description = "A small project for practising pull requests and CI/CD"
+requires-python = ">=3.14"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+]
