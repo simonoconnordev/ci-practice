@@ -2,7 +2,7 @@
 
 import math
 
-WORDS_PER_MINUTE = 200
+WORDS_PER_MINUTE = 250
 
 
 def reading_time(word_count: int) -> int:
